@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2: Online-Library</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo">
+          <i class="fas fa-book"><h1>TLL:</h1> </i>
+          The Local Library
+        </a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">Home</a>
+        
+          <a href="#featured">Featured</a>
+    
+          <div class="dropdown">
+            <button class="dropbtn"><a href="#arrivals">Books, DVDs & Music</a></button>
+            <div class="dropdown-content">
+          
+              <table>
+                <tr>
+                  <th><h1>Fiction</h1></th>
+                  <th><h1>Nonfiction</h1></th> 
+                 
+                </tr>
+                <tr>
+                  <td><a href="#">General Fiction </a></td>
+                  <td> <a href="#">All Nonfiction</a></td> 
+                 
+                </tr>
+                <tr>
+                  <td><a href="#">Mystery </a></td>
+                  <td><a href="#">Biography </a></td> 
+             
+                </tr>
+                <tr>
+                  <td>  <a href="#">Romance </a></td>
+                  <td><a href="#">Food and Drink </a></td> 
+             
+                </tr>
+                <tr>
+                  <td> <a href="#">Science Fiction</a></td>
+                  <td><a href="#">Health and Wellness</a></td> 
+             
+                </tr>
+                <tr>
+                  <td> <a href="#">Graphic Books</a></td>
+                  <td><a href="#">History</a></td> 
+             
+                </tr>
+                <tr>
+          
+              </table>
+
+            </div>
+          </div>
+          
+          
+
+          <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
+          <a href="#reviews">Using the Library</a>
+                    <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
+          <a href="#featured">Teens</a>
+                    <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
+
+                    <div class="dropdown">
+                      <button class="dropbtn"><a href="#featured">Kids</a></button>
+                      <div class="dropdown-content">
+                        <a href="#">Kids Birth to 5</a>
+                        <a href="#">Kids 6 to 12</a>
+                       
+                      </div>
+                    </div>
+          
+       
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featured" class="fas fa-list"></a>
+      <a href="#arrivals" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="enter your email"
+          id=""
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+      </form>
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>New Arrivals</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex
+            minima at!
+          </p>
+          <a href="#" class="btn">Browse</a>
+        </div>
+
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-1.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-2.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-3.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-4.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-5.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-6.png" alt=""
+            /></a>
+          </div>
+          <img src="image/stand.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>Featured</span></h1>
+
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+             
+            </div>
+            <div class="image">
+              <img src="image/book-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Tell us how we're doing</h3>
+
+              <a href="#" class="btn">Announcements</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              
+            </div>
+            <div class="image">
+              <img src="image/book-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Consumer reports online</h3>
+
+              <a href="#" class="btn">Online Services</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+            
+            </div>
+            <div class="image">
+              <img src="image/book-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Read Romance</h3>
+
+              <a href="#" class="btn">Booklist</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+            
+            </div>
+            <div class="image">
+              <img src="image/book-4.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>How to raise confident kids</h3>
+
+              <a href="#" class="btn">Kids</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+            
+            </div>
+            <div class="image">
+              <img src="image/book-5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Full Stack Coding</h3>
+
+              <a href="#" class="btn">Special collection</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+           
+            </div>
+            <div class="image">
+              <img src="image/book-6.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Celebrating diversity</h3>
+
+              <a href="#" class="btn">Booklist</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+          
+            </div>
+            <div class="image">
+              <img src="image/book-7.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Effective career goals</h3>
+
+              <a href="#" class="btn">Online Services</a>
+            </div>
+          </div>
+</div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <section class="newsletter">
+      <form action="">
+        <h3>subscribe for newsletter</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input type="submit" value="subscribe" class="btn" />
+      </form>
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- arrivals section starts  -->
+    <!-- books Section -->
+
+    <section class="arrivals" id="arrivals">
+      <h1 class="heading"><span>Books</span></h1>
+
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Adult</h3>
+              <li>New ebook</li>
+              <li>New audio book</li>
+              <li>New Print Fiction</li>
+              <li>New print nonfiction</li>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Teens</h3>
+              <li>New ebook</li>
+              <li>New audio book</li>
+              <li>New Print Fiction</li>
+              <li>New print nonfiction</li>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Kids</h3>
+              <li>New ebook</li>
+              <li>New audio book</li>
+              <li>New Print Fiction</li>
+              <li>New print nonfiction</li>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- arrivals section ends -->
+
+    <!-- deal section starts  -->
+
+    <!-- ***NOTE YOU MADE CHANGES HERE YOU HAVE TO CHANGE THE CLASS ETC ****-->
+    <section class="deal">
+      <div class="content">
+        <h1>Upcoming programs</h1>
+        <h3>Seminars & Read along</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+          perspiciatis in atque dolore tempora quaerat at fuga dolorum natus
+          velit.
+        </p>
+        <a href="#" class="btn">Browse</a>
+      </div>
+
+      
+      <div class="image">
+        <img src="image/deal-img.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- deal section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+      <!-- ***NOTE: YOU HAVE TO CHANGE THE CLASS OF THIS SECTION TO USING THE LIBRARY. BUT KEEP IT UNTIL WE FIX STUFF**** -->
+      <h1 class="heading"><span>Using the Library</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.png" alt="" />
+            <h3>Help</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-2.png" alt="" />
+            <h3>Computer & digital services</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-3.png" alt="" />
+            <h3>Services</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+          </div>
+    
+
+          <div class="swiper-slide box">
+            <img src="image/pic-5.png" alt="" />
+            <h3>Library information in your language</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+          </div>
+  
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- reviews section ends -->
+
+    
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+   
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> (416)123-45678) </a>
+          <a href="#"> <i class="fas fa-envelope"></i> thelocallibrary@Toronto.ca </a>
+          <a href="#"> <i class="fas fa-envelope"></i> Address: 1234 a street near you Ave, Toronto, Ontario M51 2N3 </a>
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+    
+    </section>
+
+    <!-- footer section ends -->
+ 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
