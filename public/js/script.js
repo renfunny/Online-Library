@@ -1,34 +1,31 @@
-searchForm = document.querySelector('.search-form');
+searchForm = document.querySelector(".search-form");
 
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.toggle('active');
-}
+document.querySelector("#search-btn").onclick = () => {
+  searchForm.classList.toggle("active");
+};
 
-let loginForm = document.querySelector('.login-form-container');
+let loginForm = document.querySelector(".login-form-container");
 
-document.querySelector('#login-btn').onclick = () =>{
-  loginForm.classList.toggle('active');
-}
+document.querySelector("#login-btn").onclick = () => {
+  loginForm.classList.toggle("active");
+};
 
-document.querySelector('#close-login-btn').onclick = () =>{
-  loginForm.classList.remove('active');
-}
+document.querySelector("#close-login-btn").onclick = () => {
+  loginForm.classList.remove("active");
+};
 
-window.onscroll = () =>{
+window.onscroll = () => {
+  searchForm.classList.remove("active");
 
-  searchForm.classList.remove('active');
-
-  if(window.scrollY > 80){
-    document.querySelector('.header .header-2').classList.add('active');
-  }else{
-    document.querySelector('.header .header-2').classList.remove('active');
+  if (window.scrollY > 80) {
+    document.querySelector(".header .header-2").classList.add("active");
+  } else {
+    document.querySelector(".header .header-2").classList.remove("active");
   }
-
-}
-
+};
 
 var swiper = new Swiper(".books-slider", {
-  loop:true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -49,7 +46,7 @@ var swiper = new Swiper(".books-slider", {
 
 var swiper = new Swiper(".featured-slider", {
   spaceBetween: 10,
-  loop:true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -77,7 +74,7 @@ var swiper = new Swiper(".featured-slider", {
 
 var swiper = new Swiper(".arrivals-slider", {
   spaceBetween: 10,
-  loop:true,
+  loop: true,
   centeredSlides: true,
 
   breakpoints: {
@@ -95,10 +92,10 @@ var swiper = new Swiper(".arrivals-slider", {
 
 var swiper = new Swiper(".reviews-slider", {
   spaceBetween: 10,
-  grabCursor:true,
-  loop:true,
+  grabCursor: true,
+  loop: true,
   centeredSlides: true,
-  
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -115,3 +112,30 @@ var swiper = new Swiper(".reviews-slider", {
     },
   },
 });
+
+// API call for Top 15
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "a2e2218b81msh172204e911c7de7p1a8ea0jsnc46101fc6953",
+    "X-RapidAPI-Host": "hapi-books.p.rapidapi.com",
+  },
+};
+
+fetch("https://hapi-books.p.rapidapi.com/month/2022/11", options)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    for (let i = 0; i < 15; i++) {
+      const rootEl = document.querySelector(`.swiper-wrapper`);
+      let anchorEl = document.createElement(`a`);
+      anchorEl.classList.add(`swiper-slide`);
+      anchorEl.href = data[i].url;
+      let bookCover = document.createElement(`img`);
+      bookCover.src = data[i].cover;
+
+      rootEl.appendChild(anchorEl);
+      anchorEl.appendChild(bookCover);
+    }
+  })
+  .catch((err) => console.error(err));

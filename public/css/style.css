@@ -199,8 +199,8 @@ section {
   position: absolute;
   background-color: #3315dc;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .dropdown-content a {
@@ -210,12 +210,17 @@ section {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 .bottom-navbar {
   text-align: center;
