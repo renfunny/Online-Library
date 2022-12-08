@@ -43,7 +43,6 @@
         <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
           <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-shopping-cart"></a>
           <div id="login-btn" class="fas fa-user"></div>
         </div>
       </div>
@@ -55,7 +54,7 @@
           <a href="#featured">Featured</a>
     
           <div class="dropdown">
-            <button class="dropbtn"><a href="#arrivals">Books, DVDs & Music</a></button>
+            <button class="dropbtn"><a href="#arrivals">Genres</a></button>
             <div class="dropdown-content">
           
               <table>
@@ -65,27 +64,27 @@
                  
                 </tr>
                 <tr>
-                  <td><a href="#">General Fiction </a></td>
-                  <td> <a href="#">All Nonfiction</a></td> 
+                  <td><a href="#">Fantasy </a></td>
+                  <td> <a href="#">Psychology</a></td> 
                  
                 </tr>
                 <tr>
-                  <td><a href="#">Mystery </a></td>
-                  <td><a href="#">Biography </a></td> 
+                  <td><a href="#">Science Fiction</a></td>
+                  <td><a href="#">Sports</a></td> 
              
                 </tr>
                 <tr>
-                  <td>  <a href="#">Romance </a></td>
-                  <td><a href="#">Food and Drink </a></td> 
+                  <td>  <a href="#">Romance</a></td>
+                  <td><a href="#">Biography</a></td> 
              
                 </tr>
                 <tr>
-                  <td> <a href="#">Science Fiction</a></td>
-                  <td><a href="#">Health and Wellness</a></td> 
+                  <td> <a href="#">Comics</a></td>
+                  <td><a href="#">Science</a></td> 
              
                 </tr>
                 <tr>
-                  <td> <a href="#">Graphic Books</a></td>
+                  <td> <a href="#">Horror</a></td>
                   <td><a href="#">History</a></td> 
              
                 </tr>
@@ -135,7 +134,7 @@
     <div class="login-form-container">
       <div id="close-login-btn" class="fas fa-times"></div>
 
-      <form action="">
+      <form action="" style="display: block;">
         <h3>sign in</h3>
         <span>username</span>
         <input
@@ -158,8 +157,40 @@
           <label for="remember-me"> remember me</label>
         </div>
         <input type="submit" value="sign in" class="btn" />
-        <p>forget password ? <a href="#">click here</a></p>
         <p>don't have an account ? <a href="#">create one</a></p>
+      </form>
+
+      <form action="" style="display: none;">
+        <h3>sign up</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="enter your email"
+          id=""
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <span>re-enter password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="re-enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign up" class="btn" />
       </form>
     </div>
 
@@ -168,7 +199,7 @@
     <section class="home" id="home">
       <div class="row">
         <div class="content">
-          <h3>New Arrivals</h3>
+          <h3>November's Top 15</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
             deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex
@@ -179,7 +210,7 @@
 
         <div class="swiper books-slider">
           <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide"
+            <!-- <a href="#" class="swiper-slide"
               ><img src="image/book-1.png" alt=""
             /></a>
             <a href="#" class="swiper-slide"
@@ -196,7 +227,7 @@
             /></a>
             <a href="#" class="swiper-slide"
               ><img src="image/book-6.png" alt=""
-            /></a>
+            /></a> -->
           </div>
           <img src="image/stand.png" class="stand" alt="" />
         </div>
@@ -224,7 +255,6 @@
             <div class="content">
               <h3>Tell us how we're doing</h3>
 
-              <a href="#" class="btn">Announcements</a>
             </div>
           </div>
 
@@ -240,7 +270,6 @@
             <div class="content">
               <h3>Consumer reports online</h3>
 
-              <a href="#" class="btn">Online Services</a>
             </div>
           </div>
 
@@ -256,7 +285,6 @@
             <div class="content">
               <h3>Read Romance</h3>
 
-              <a href="#" class="btn">Booklist</a>
             </div>
           </div>
 
@@ -272,7 +300,6 @@
             <div class="content">
               <h3>How to raise confident kids</h3>
 
-              <a href="#" class="btn">Kids</a>
             </div>
           </div>
 
@@ -288,7 +315,6 @@
             <div class="content">
               <h3>Full Stack Coding</h3>
 
-              <a href="#" class="btn">Special collection</a>
             </div>
           </div>
 
@@ -304,7 +330,6 @@
             <div class="content">
               <h3>Celebrating diversity</h3>
 
-              <a href="#" class="btn">Booklist</a>
             </div>
           </div>
 
@@ -320,7 +345,6 @@
             <div class="content">
               <h3>Effective career goals</h3>
 
-              <a href="#" class="btn">Online Services</a>
             </div>
           </div>
 </div>
