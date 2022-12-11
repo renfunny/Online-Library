@@ -58,37 +58,22 @@
             <div class="dropdown-content">
           
               <table>
+              
                 <tr>
-                  <th><h1>Fiction</h1></th>
-                  <th><h1>Nonfiction</h1></th> 
+                  <td><a href="/fiction">Fiction </a></td>
+                  <td> <a href="/adventure">Adventure</a></td> 
                  
                 </tr>
                 <tr>
-                  <td><a href="#">Fantasy </a></td>
-                  <td> <a href="#">Psychology</a></td> 
-                 
-                </tr>
-                <tr>
-                  <td><a href="#">Science Fiction</a></td>
-                  <td><a href="#">Sports</a></td> 
-             
-                </tr>
-                <tr>
-                  <td>  <a href="#">Romance</a></td>
-                  <td><a href="#">Biography</a></td> 
-             
-                </tr>
-                <tr>
-                  <td> <a href="#">Comics</a></td>
+                  <td><a href="#">Drama</a></td>
                   <td><a href="#">Science</a></td> 
              
                 </tr>
                 <tr>
-                  <td> <a href="#">Horror</a></td>
-                  <td><a href="#">History</a></td> 
+                  <td>  <a href="#">History</a></td>
+                  <td><a href="#">Philosophy</a></td> 
              
                 </tr>
-                <tr>
           
               </table>
 
@@ -100,19 +85,6 @@
           <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
           <a href="#reviews">Using the Library</a>
                     <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
-          <a href="#featured">Teens</a>
-                    <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
-
-                    <div class="dropdown">
-                      <button class="dropbtn"><a href="#featured">Kids</a></button>
-                      <div class="dropdown-content">
-                        <a href="#">Kids Birth to 5</a>
-                        <a href="#">Kids 6 to 12</a>
-                       
-                      </div>
-                    </div>
-          
-       
         </nav>
       </div>
     </header>
@@ -134,7 +106,7 @@
     <div class="login-form-container">
       <div id="close-login-btn" class="fas fa-times"></div>
 
-      <form action="" style="display: block;">
+      <form id="sign-in" style="display: none;">
         <h3>sign in</h3>
         <span>username</span>
         <input
@@ -157,10 +129,11 @@
           <label for="remember-me"> remember me</label>
         </div>
         <input type="submit" value="sign in" class="btn" />
-        <p>don't have an account ? <a href="#">create one</a></p>
+        <p>don't have an account ? <a class="signup-btn">create one</a></p>
       </form>
 
-      <form action="" style="display: none;">
+      <!-- Sign-Up -->
+      <form id="sign-up" style="display: none;">
         <h3>sign up</h3>
         <span>username</span>
         <input
@@ -192,7 +165,13 @@
         </div>
         <input type="submit" value="sign up" class="btn" />
       </form>
-    </div>
+ 
+
+    <!-- Log-Out-->
+    <form id="log-out" style="display: none;">     
+      <input type="submit" value="Log Out" class="btn" />
+    </form>
+  </div>
 
     <!-- home section starts  -->
 
@@ -364,7 +343,7 @@
           type="email"
           name=""
           placeholder="enter your email"
-          id=""
+          id="newsletter-email"
           class="box"
         />
         <input type="submit" value="subscribe" class="btn" />
@@ -377,7 +356,7 @@
     <!-- books Section -->
 
     <section class="arrivals" id="arrivals">
-      <h1 class="heading"><span>Books</span></h1>
+      <h1 class="heading"><span>Popular Genres</span></h1>
 
       <div class="swiper arrivals-slider">
         <div class="swiper-wrapper">
@@ -386,11 +365,7 @@
               <img src="image/book-1.png" alt="" />
             </div>
             <div class="content">
-              <h3>Adult</h3>
-              <li>New ebook</li>
-              <li>New audio book</li>
-              <li>New Print Fiction</li>
-              <li>New print nonfiction</li>
+              <h3>Fiction</h3>
             </div>
           </a>
 
@@ -399,11 +374,7 @@
               <img src="image/book-2.png" alt="" />
             </div>
             <div class="content">
-              <h3>Teens</h3>
-              <li>New ebook</li>
-              <li>New audio book</li>
-              <li>New Print Fiction</li>
-              <li>New print nonfiction</li>
+              <h3>Adventure</h3>
             </div>
           </a>
 
@@ -412,11 +383,7 @@
               <img src="image/book-3.png" alt="" />
             </div>
             <div class="content">
-              <h3>Kids</h3>
-              <li>New ebook</li>
-              <li>New audio book</li>
-              <li>New Print Fiction</li>
-              <li>New print nonfiction</li>
+              <h3>Drama</h3>
             </div>
           </a>
 
@@ -431,14 +398,14 @@
     <!-- ***NOTE YOU MADE CHANGES HERE YOU HAVE TO CHANGE THE CLASS ETC ****-->
     <section class="deal">
       <div class="content">
-        <h1>Upcoming programs</h1>
-        <h3>Seminars & Read along</h3>
+        <h1>Upcoming features</h1>
+        <h3>Checkout Cart, Buying, And Much More!</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
           perspiciatis in atque dolore tempora quaerat at fuga dolorum natus
           velit.
         </p>
-        <a href="#" class="btn">Browse</a>
+        <a href="#newsletter-email" class="btn">Stay Updated</a>
       </div>
 
       
@@ -459,7 +426,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide box">
             <img src="image/pic-1.png" alt="" />
-            <h3>Help</h3>
+            <h3>search books by category</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
@@ -469,7 +436,7 @@
 
           <div class="swiper-slide box">
             <img src="image/pic-2.png" alt="" />
-            <h3>Computer & digital services</h3>
+            <h3>search books by name</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
@@ -479,7 +446,7 @@
 
           <div class="swiper-slide box">
             <img src="image/pic-3.png" alt="" />
-            <h3>Services</h3>
+            <h3>Save your favourite books</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
@@ -490,7 +457,7 @@
 
           <div class="swiper-slide box">
             <img src="image/pic-5.png" alt="" />
-            <h3>Library information in your language</h3>
+            <h3>create your own account</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
@@ -517,9 +484,9 @@
 
         <div class="box">
           <h3>contact info</h3>
-          <a href="#"> <i class="fas fa-phone"></i> (416)123-45678) </a>
-          <a href="#"> <i class="fas fa-envelope"></i> thelocallibrary@Toronto.ca </a>
-          <a href="#"> <i class="fas fa-envelope"></i> Address: 1234 a street near you Ave, Toronto, Ontario M51 2N3 </a>
+          <a href="#"> <i class="fas fa-phone"></i> (416)000-0000 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> notareallibrary@Toronto.ca </a>
+          <a href="#"> <i class="fas fa-envelope"></i> Address: 1234 im right behind you, Toronto, Ontario M1M 2N2 </a>
         </div>
       </div>
 

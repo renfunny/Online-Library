@@ -4,15 +4,15 @@ document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
 };
 
-let loginForm = document.querySelector(".login-form-container");
+// let loginForm = document.querySelector(".login-form-container");
 
-document.querySelector("#login-btn").onclick = () => {
-  loginForm.classList.toggle("active");
-};
+// document.querySelector("#login-btn").onclick = () => {
+//   loginForm.classList.toggle("active");
+// };
 
-document.querySelector("#close-login-btn").onclick = () => {
-  loginForm.classList.remove("active");
-};
+// document.querySelector("#close-login-btn").onclick = () => {
+//   loginForm.classList.remove("active");
+// };
 
 window.onscroll = () => {
   searchForm.classList.remove("active");
@@ -139,3 +139,30 @@ fetch("https://hapi-books.p.rapidapi.com/month/2022/11", options)
     }
   })
   .catch((err) => console.error(err));
+
+// Log in
+
+let loginForm = document.querySelector(".login-form-container");
+const signInForm = document.getElementById(`sign-in`);
+const signUpForm = document.getElementById(`sign-up`);
+const logOutForm = document.getElementById(`log-out`);
+let loggedIn = false;
+
+document.querySelector("#login-btn").onclick = () => {
+  loginForm.classList.toggle("active");
+  if (loggedIn === false) {
+    signInForm.style.display = `block`;
+    signUpForm.style.display = `none`;
+  } else {
+    logOutForm.style.display = `block`;
+  }
+};
+
+document.querySelector("#close-login-btn").onclick = () => {
+  loginForm.classList.remove("active");
+};
+
+document.querySelector(`.signup-btn`).onclick = () => {
+  signInForm.style.display = `none`;
+  signUpForm.style.display = `block`;
+};
