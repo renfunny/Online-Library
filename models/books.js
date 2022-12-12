@@ -34,7 +34,7 @@ Books.init(
         allowNull: false
     },
     description: {
-        type: TEXT('medium'),
+        type: DataTypes.TEXT('medium'),
     },
     published_year: {
         type: DataTypes.INTEGER,
@@ -42,7 +42,7 @@ Books.init(
         autoIncrement: true
     },
     average_rating: {
-        type: DECIMAL,
+        type: DataTypes.DECIMAL,
     },
     page_num: {
         type: DataTypes.INTEGER,
