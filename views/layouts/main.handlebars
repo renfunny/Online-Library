@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,14 +18,14 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header section starts  -->
 
     <header class="header">
       <div class="header-1">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <i class="fas fa-book"><h1>TLL:</h1> </i>
           The Local Library
         </a>
@@ -49,39 +50,41 @@
       <div class="header-2">
         <nav class="navbar">
           <a href="#home">Home</a>
-
+        
           <a href="#featured">Featured</a>
-
+    
           <div class="dropdown">
             <button class="dropbtn"><a href="#arrivals">Genres</a></button>
             <div class="dropdown-content">
-
+          
               <table>
-
+              
                 <tr>
                   <td><a href="/fiction">Fiction </a></td>
-                  <td> <a href="/adventure">Adventure</a></td>
-
+                  <td> <a href="/adventure">Adventure</a></td> 
+                 
                 </tr>
                 <tr>
                   <td><a href="#">Drama</a></td>
-                  <td><a href="#">Science</a></td>
-
+                  <td><a href="#">Science</a></td> 
+             
                 </tr>
                 <tr>
-                  <td> <a href="#">History</a></td>
-                  <td><a href="#">Philosophy</a></td>
-
+                  <td>  <a href="#">History</a></td>
+                  <td><a href="#">Philosophy</a></td> 
+             
                 </tr>
-
+          
               </table>
 
             </div>
           </div>
+          
+          
 
           <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
-          <a href="#features">Library's features</a>
-          <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
+          <a href="#features">Features</a>
+                    <!-- ***NOTE:**** YOU MADE A CHANGE HERE YOU HAVE TO CHANGE THE LINK NAME TO USING LIBRARY -->
         </nav>
       </div>
     </header>
@@ -94,7 +97,7 @@
       <a href="#home" class="fas fa-home"></a>
       <a href="#featured" class="fas fa-list"></a>
       <a href="#arrivals" class="fas fa-tags"></a>
-      <a href="#features" class="fas fa-comments"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
       <a href="#blogs" class="fas fa-blog"></a>
     </nav>
 
@@ -162,12 +165,14 @@
         </div>
         <input type="submit" value="sign up" class="btn" />
       </form>
+ 
 
-      <!-- Log-Out-->
-      <form id="log-out" style="display: none;">
-        <input type="submit" value="Log Out" class="btn" />
-      </form>
-    </div>
+    <!-- Log-Out-->
+    <form id="log-out" style="display: none;">     
+      <input type="submit" value="Log Out" class="btn" />
+    </form>
+  </div>
+
     <!-- home section starts  -->
 
     <section class="home" id="home">
@@ -209,9 +214,10 @@
     </section>
 
     <!-- home section ends  -->
+
     {{{body}}}
 
-     <!-- newsletter section starts -->
+    <!-- newsletter section starts -->
 
     <section class="newsletter">
       <form action="">
@@ -295,9 +301,9 @@
 
     <!-- reviews section starts  -->
 
-    <section class="reviews" id="reviews">
+    <section class="reviews" id="features">
       <!-- ***NOTE: YOU HAVE TO CHANGE THE CLASS OF THIS SECTION TO USING THE LIBRARY. BUT KEEP IT UNTIL WE FIX STUFF**** -->
-      <h1 class="heading"><span>Using the Library</span></h1>
+      <h1 class="heading"><span>Features</span></h1>
 
       <div class="swiper reviews-slider">
         <div class="swiper-wrapper">
@@ -383,6 +389,6 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
