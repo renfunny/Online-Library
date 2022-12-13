@@ -1,0 +1,30 @@
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+  <h1 class="heading"><span>{{title}}</span></h1>
+
+  <div class="swiper featured-slider">
+    {{#each books as |book|}}
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <div class="icons">
+            <a href={{link}} class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+
+          </div>
+          <div class="image">
+            <img src={{cover}} alt="" />
+          </div>
+          <div class="content">
+            <h3>{{title}}</h3>
+
+          </div>
+        </div>
+      </div>
+    {{/each}}
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- featured section ends -->
