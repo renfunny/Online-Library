@@ -2,7 +2,7 @@ const Books = require('./books');
 const Genre = require('./genre');
 const Users = require('./users');
 
-Genre.belongsToMany(Books, {
+Genre.hasMany(Books, {
     foreignKey: 'users_id',
     onDelete: 'CASCADE',
 });
