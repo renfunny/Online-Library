@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 // create our Books model
 class Books extends Model {}
@@ -8,64 +8,43 @@ class Books extends Model {}
 Books.init(
   {
     id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
     },
     title: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    subtitle: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
+
     author: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     genre: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
+      references: {
+        model: `Genre`,
+        key: `name`,
+      },
     },
     cover: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    description: {
-        type: DataTypes.TEXT('medium'),
-    },
-    published_year: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        autoIncrement: true
-    },
-    average_rating: {
-        type: DataTypes.DECIMAL,
-    },
-    page_num: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        autoIncrement: true
-    },
-    ratings_count: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        autoIncrement: true
-    },
-    price: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        autoIncrement: true
+    link: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
-{
+  {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'books'
+    modelName: "books",
   }
 );
 

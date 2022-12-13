@@ -1,6 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
 
 class Users extends Model {}
 
@@ -29,6 +29,13 @@ Users.init(
       allowNull: false,
       validate: {
         len: [1],
+      },
+    },
+    saved_books: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: `books`,
+        key: `id`,
       },
     },
   },
@@ -60,7 +67,7 @@ Users.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'users',
+    modelName: "users",
   }
 );
 
