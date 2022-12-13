@@ -1,21 +1,23 @@
-const Books = require("./books");
-const Genre = require("./genre");
-const Users = require("./users");
+const Book = require("./book");
+const User = require("./user");
 
-Genre.hasMany(Books, {
-  foreignKey: "users_id",
-  onDelete: "CASCADE",
-});
+// Genre.hasMany(Books, {
+//   foreignKey: "book_id",
+//   onDelete: "CASCADE",
+// });
 
-Books.hasOne(Genre, {
-  foreignKey: "users_id",
-  onDelete: "CASCADE",
+// Books.hasOne(Genre, {
+//   foreignKey: "genre_type",
+//   onDelete: "CASCADE",
+// });
+Book.belongsTo(User, {
+  foreignKey: "user_id",
 });
 
 // A user can have many books saved
-Users.hasMany(Books, {
-  foreignKey: "users_id",
+User.hasMany(Book, {
+  foreignKey: "user_id",
   onDelete: "CASCADE",
 });
 
-module.exports = { Users, Books };
+module.exports = { User, Book };
