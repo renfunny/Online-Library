@@ -332,6 +332,9 @@ section {
   color: var(--black);
   cursor: pointer;
 }
+.signup-btn {
+  cursor: pointer;
+}
 
 .home {
   background: url(../image/banner-bg.jpg) no-repeat;
