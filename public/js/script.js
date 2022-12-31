@@ -146,6 +146,7 @@ let loginForm = document.querySelector(".login-form-container");
 const signInForm = document.getElementById(`sign-in`);
 const signUpForm = document.getElementById(`sign-up`);
 const logOutForm = document.getElementById(`log-out`);
+
 let loggedIn = false;
 
 document.querySelector("#login-btn").onclick = () => {
