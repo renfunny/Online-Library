@@ -17,6 +17,23 @@
 
 The Local Library is a small library with a collection of over 100 diferent books, which provides the user a way to learn about the rich history behind the books, as well as to save their favourite books, and find more books based on 6 different genres (Fiction, Adventure, Drama, Science, History, and Philosophy), and/or authors. This project was made so users have a way to extend their knowledge by having a small catalog of books that are avaliable for them to explore and learn from. This application allows the user to make their personal account and save as many books as they wish as their favourites, so they can easily access them and learn about them. The library also allows users to see the top 15 books from the previous month which they can click on and read more about and even purchase through external links. This application required many different technologies, such as, Handlebars.js, express.js, node.js, swiper, JavaScript, and Heroku for its deployment. As a group project, the development of this application allowed us to work as a team and divide the work accordingly, it helped us reinforce materials and technologies previously introduced and gave us chances for us to further research and learn more about them.
 
+This application uses:
+
+- HTML
+- CSS
+- Java Script
+  -Node.js and Express.js to create a RESTful API
+  -Handlebars.js as the template engine.
+  -MySQL and the Sequelize ORM for the database.
+
+\*\*\*??? WHAT IS THE Use at least one new library, package, or technology that we haven’t discussed.
+
+- Uses folder structure that meets the MVC paradigm.
+- Includes authentication (express-session and cookies).
+- Protect API keys and sensitive information with environment variables.
+
+- is deployed using Heroku (with data).
+
 ## Installation
 
 The application does not need to be installed, you can find the link to the live application here:
@@ -36,9 +53,19 @@ Apache2.0
 
 This project is still under development. Constructive critism, feedback, and suggestions are always welcome and would be really helpful to improve the library for the future.
 
+This program was created by:
+
+Icaro Araujo
+Glenroy Bastien
+Renato Cordova
+
 ## Testing
 
 This project is live, so no tests can be made.
+
+## Deployed Site
+
+Heroku: https://the-local-library.herokuapp.com/
 
 ## Contact Information
 
