@@ -26,7 +26,6 @@ This application uses:
   -Handlebars.js as the template engine.
   -MySQL and the Sequelize ORM for the database.
 
-\*\*\*??? WHAT IS THE Use at least one new library, package, or technology that we haven’t discussed.
 
 - Uses folder structure that meets the MVC paradigm.
 - Includes authentication (express-session and cookies).
