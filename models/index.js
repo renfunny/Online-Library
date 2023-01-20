@@ -1,5 +1,5 @@
-const Book = require("./book");
-const User = require("./user");
+const Book = require("./Book");
+const User = require("./User");
 
 // Genre.hasMany(Books, {
 //   foreignKey: "book_id",

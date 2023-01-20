@@ -69,10 +69,10 @@ Heroku: https://the-local-library.herokuapp.com/
 ## Contact Information
 
 - GitHub:
-  [renfunny](https://github.com/renfunny)
-  [Kikolock](https://github.com/Kikolock)
+  [renfunny](https://github.com/renfunny),
+  [Kikolock](https://github.com/Kikolock),
   [kendalbastien](https://github.com/kendalbastien)
 - Email:
-  [ren99cordova@gmail.com](mailto:ren99cordova@gmail.com)
-  [icaro12@hotmail.com](mailto:icaro12@hotmail.com)
-  [kendalbastien@gmail.com](mailto:kendalbastien@gmail.com)
+  [ren99cordova@gmail.com](mailto:ren99cordova@gmail.com),
+  [icaro12@hotmail.com](mailto:icaro12@hotmail.com),
+  [kendalbastien@gmail.com](mailto:kendalbastien@gmail.com),

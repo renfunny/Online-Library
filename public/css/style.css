@@ -248,12 +248,12 @@ section {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.9);
-  position: fixed;
+  /* position: fixed;
   top: 0;
   right: -105%;
   z-index: 10000;
   height: 100%;
-  width: 100%;
+  width: 100%; */
 }
 
 .login-form-container.active {
@@ -324,14 +324,14 @@ section {
   text-decoration: underline;
 }
 
-.login-form-container #close-login-btn {
+/* .login-form-container #close-login-btn {
   position: absolute;
   top: 1.5rem;
   right: 2.5rem;
   font-size: 5rem;
   color: var(--black);
   cursor: pointer;
-}
+} */
 .signup-btn {
   cursor: pointer;
 }

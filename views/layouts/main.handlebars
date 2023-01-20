@@ -42,8 +42,13 @@
 
         <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
-          <a href="#" class="fas fa-heart"></a>
-          <div id="login-btn" class="fas fa-user"></div>
+          <a href="/saved" class="fas fa-heart"></a>
+          {{#if logged_in}}
+           <a href="/logout" id="login-btn" class="fas fa-user"></a>
+         {{else}}
+          <a href="/login" id="login-btn" class="fas fa-user"></a>
+         {{/if}}
+          
         </div>
       </div>
 
@@ -101,7 +106,7 @@
       <a href="#blogs" class="fas fa-blog"></a>
     </nav>
 
-    <!-- login form  -->
+    {{!-- <!-- login form  -->
 
     <div class="login-form-container">
       <div id="close-login-btn" class="fas fa-times"></div>
@@ -111,58 +116,45 @@
         <span>username</span>
         <input
           type="email"
-          name=""
           class="box"
           placeholder="enter your email"
-          id=""
+          id="email-login"
         />
         <span>password</span>
         <input
           type="password"
-          name=""
           class="box"
           placeholder="enter your password"
-          id=""
+          id="password-login"
         />
-        <div class="checkbox">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me"> remember me</label>
-        </div>
         <input type="submit" value="sign in" class="btn" />
-        <p>don't have an account ? <a class="signup-btn">create one</a></p>
+        <p>don't have an account? <a class="signup-btn">Create one</a></p>
       </form>
 
       <!-- Sign-Up -->
       <form id="sign-up" style="display: none;">
         <h3>sign up</h3>
-        <span>username</span>
+        <span>name</span>
         <input
-          type="email"
-          name=""
+          type="name"
+          class="box"
+          placeholder="enter your name"
+          id="name-signup"
+        />
+         <span>email</span>
+        <input
+          type="name"
           class="box"
           placeholder="enter your email"
-          id=""
+          id="email-signup"
         />
         <span>password</span>
         <input
           type="password"
-          name=""
           class="box"
           placeholder="enter your password"
-          id=""
+          id="password-signup"
         />
-        <span>re-enter password</span>
-        <input
-          type="password"
-          name=""
-          class="box"
-          placeholder="re-enter your password"
-          id=""
-        />
-        <div class="checkbox">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me"> remember me</label>
-        </div>
         <input type="submit" value="sign up" class="btn" />
       </form>
  
@@ -171,7 +163,7 @@
     <form id="log-out" style="display: none;">     
       <input type="submit" value="Log Out" class="btn" />
     </form>
-  </div>
+  </div> --}}
 
     <!-- home section starts  -->
 
@@ -390,5 +382,8 @@
 
     <!-- custom js file link  -->
     <script src="/js/script.js"></script>
+    {{#if looges_in}}
+    <script src="/js/saveBook.js"></script>
+    {{/if}}
   </body>
 </html>
