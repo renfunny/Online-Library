@@ -1,14 +1,18 @@
 const router = require("express").Router();
 const { User, Book } = require("../models");
+const withAuth = require("../utils/auth");
 
 //all books
 router.get(`/`, async (req, res) => {
   try {
-    const booksData = await Book.findAll();
+    const booksData = await Book.findAll({
+      include: [User],
+    });
     const books = booksData.map((book) => book.get({ plain: true }));
 
     res.render(`home`, {
       books,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -85,6 +89,34 @@ router.get("/author/:author", async (req, res) => {
   } catch (err) {
     res.json(err);
   }
+});
+
+router.get("/saved", withAuth, async (req, res) => {
+  try {
+    const savedBooks = await Book.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+    });
+    const books = savedBooks.map((book) => book.get({ plain: true }));
+
+    res.render("saved", {
+      books,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/login", (req, res) => {
+  res.render("login");
+});
+
+router.get("/signup", (req, res) => {
+  res.render("signup");
+});
+router.get("/logout", (req, res) => {
+  res.render("logout");
 });
 
 module.exports = router;
