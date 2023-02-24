@@ -1,15 +1,6 @@
 const Book = require("./Book");
 const User = require("./User");
 
-// Genre.hasMany(Books, {
-//   foreignKey: "book_id",
-//   onDelete: "CASCADE",
-// });
-
-// Books.hasOne(Genre, {
-//   foreignKey: "genre_type",
-//   onDelete: "CASCADE",
-// });
 Book.belongsTo(User, {
   foreignKey: "user_id",
 });
