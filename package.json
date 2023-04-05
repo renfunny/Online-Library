@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kikolock/Online-Library.git"
+    "url": "git+https://github.com/renfunny/Online-Library"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kikolock/Online-Library/issues"
+    "url": "https://github.com/renfunny/Online-Library/issues"
   },
-  "homepage": "https://github.com/Kikolock/Online-Library#readme",
+  "homepage": "https://github.com/renfunny/Online-Library#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.5",
@@ -27,6 +27,7 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.26.0"
+    "sequelize": "^6.26.0",
+    "pg": "^8.5.1"
   }
 }
